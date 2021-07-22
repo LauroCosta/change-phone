@@ -1,5 +1,5 @@
-import { colors, makeStyles } from "@material-ui/core";
-import { theme, textColors } from "../../config/theme";
+import {makeStyles } from "@material-ui/core";
+import {textColors } from "../../config/theme";
 
 export const useStyles = makeStyles({
   toolbar: {

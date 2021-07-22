@@ -1,4 +1,4 @@
-import { createTheme} from "@material-ui/core";
+import { createTheme, darken} from "@material-ui/core";
 
 export const colors = {
   primary: {
@@ -19,12 +19,59 @@ export const textColors = {
 
 export const theme = createTheme({
   palette: {
+    text: {
+      primary: textColors.primary,
+    },
     primary: {
-      main: colors.primary.main,
+      main: textColors.primary,
     },
-    secondary:{
-      main: colors.background,
+    secondary: {
+      main: "#5F82A6",
     },
-     
-  }
+  },
+  overrides: {
+    MuiContainer: {
+      root: {
+        height: "100%",
+      },
+    },
+    MuiButton: {
+      root: {
+        borderRadius: "6px",
+      },
+      containedPrimary: {
+        backgroundColor: colors.primary.main,
+        color: "#fff",
+        "&:hover": {
+          color: "#fff",
+          backgroundColor: darken(colors.primary.main, 0.1),
+        },
+      },
+      containedSecondary: {
+        color: textColors.primary,
+        backgroundColor: "#fff",
+        "&:hover": {
+          backgroundColor: darken("#fff", 0.1),
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      root: {
+        borderRadius: "6px",
+        borderWidth: "1.5px",
+      },
+    },
+    MuiInputBase: {
+      root: {
+        borderRadius: "6px",
+      },
+    },
+    MuiLink: {
+      root: {
+        "&:hover": {
+          cursor: "pointer",
+        },
+      },
+    },
+  },
 });

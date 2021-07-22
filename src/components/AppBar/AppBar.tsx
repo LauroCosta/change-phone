@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar as MuiAppBar, Box, Toolbar, TextField, Button, Icon } from "@material-ui/core";
+import { AppBar as MuiAppBar, Box, Toolbar, Button} from "@material-ui/core";
 import {CloseRounded} from "@material-ui/icons";
 
 
@@ -31,14 +31,11 @@ export const AppBar: React.FC<AppBarProps> = ({
         {action}
 
         <Button 
-          className={style.button}
+          style={{textTransform: "capitalize"}}
           variant="contained" 
           startIcon={<CloseRounded />}
         >Cancelar</Button>
       </Toolbar>
-
-
-
     </MuiAppBar>
   );
 };

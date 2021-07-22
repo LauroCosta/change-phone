@@ -1,0 +1,129 @@
+.modal {
+  position: relative;
+  height: 18rem;
+  width: 100%;
+  left: 0;
+
+  transition: bottom 240ms ease-in-out;
+  border-radius: 20px 20px 0 0;
+  background: #323751;
+  box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+}
+
+.modal-open {
+  position: absolute;
+  bottom: 0;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: -312px;
+}
+
+.modal-button {
+  width: 7rem;
+  height: 2.5rem;
+  position: absolute;
+  top: -1.25rem;
+  right: 20px;
+  padding: 4px 12px;
+  border: 0.5px solid #e8e8e8;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.34);
+  border-radius: 5px;
+  background: #fff;
+  color: #323751;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+
+  img {
+    width: 1rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .infoModal {
+    color: #efefef;
+    font-family: Roboto;
+    padding-left: 20px;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.25rem;
+      line-height: 100%;
+      margin-bottom: 2rem;
+    }
+
+    strong {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+  }
+
+  .inputContainer {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 2rem;
+
+    .inputs {
+      padding: 0 1rem;
+    }
+    input {
+      min-width: 3.75rem;
+      min-height: 4.25rem;
+      background: #656982;
+      border-radius: 3px;
+      color: #efefef;
+      border: 0;
+    }
+  }
+
+  .containerConfirmButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .confirmButton {
+      position: relative;
+      width: 7.75rem;
+      height: 2.25rem;
+      border-radius: 4px;
+
+      background: #ffffff;
+      border: 0.5px solid #e8e8e8;
+
+      transition: filter 0.2s;
+
+      img {
+        position: absolute;
+        width: 1.75rem;
+        bottom: 0.20rem;
+        left: -0.87rem;
+      }
+
+      &:hover {
+        filter: brightness(0.95);
+      }
+    }
+  }
+}

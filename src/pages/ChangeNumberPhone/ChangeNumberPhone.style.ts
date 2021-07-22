@@ -1,13 +1,15 @@
 import { makeStyles } from "@material-ui/core";
-import {colors} from "./config/theme"
+import {colors} from "../../config/theme"
 export const useStyles = makeStyles({
   root: {
     background: "red",
   },
 
   container: {
+    position: "relative",
     background: colors.background,
     height: "100vh",
+    overflow: "hidden",
     padding: "0",
   },
 
@@ -56,5 +58,18 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: "space-between",
     height: "70%",
+  },
+
+
+  button: {
+
+    borderRadius: "10px",
+    textTransform: "capitalize",
+
+    
+  },
+
+  iconButton: {
+
   }
 });
