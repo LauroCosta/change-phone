@@ -29,7 +29,7 @@ export const useStyles = makeStyles({
   },
 
   description: {
-    fontSize: "20px",
+    fontSize: "1.5rem",
     color: colors.primary.main,
     fontWeight: 700,
     fontFamily: "Roboto, sans-serif",
@@ -37,11 +37,11 @@ export const useStyles = makeStyles({
   },
 
   infoPhone: {  
-    fontSize: "14px",
+    fontSize: "1.25rem",
     color: colors.primary.main,
     fontWeight: 500,
     fontFamily: "Roboto, sans-serif",
-    lineHeight: "1rem",
+    lineHeight: "1.5rem",
     margin: "2rem 0",
   },
 
