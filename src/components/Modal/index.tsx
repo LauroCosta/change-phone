@@ -36,6 +36,7 @@ export function Modal({ onHideModal, showModal }: IModalProps) {
             onChange={setInputValue}
             isInputSecure
             isInputNum
+            
           />
         </div>
         <div className="containerConfirmButton">
