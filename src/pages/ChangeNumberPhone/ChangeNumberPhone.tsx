@@ -12,7 +12,7 @@ export const ChangeNumberPhone: React.FC = () => {
   const useToggle = (initialState: boolean) =>
     useReducer((prevState: boolean) => !prevState, initialState);
 
-  const [isShowModal, setIsShowModal] = useToggle(true);
+  const [isShowModal, setIsShowModal] = useToggle(false);
 
   return (
     <Container maxWidth="xs" className={style.container}>
