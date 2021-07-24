@@ -19,9 +19,4 @@ export const useStyles = makeStyles({
     display: "flex",
     alignItems: "center",
   },
-
-  button: {
-    background: "#fff",
-    color:  textColors.gray,
-  }
 });

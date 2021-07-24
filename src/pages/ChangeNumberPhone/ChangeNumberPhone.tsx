@@ -1,8 +1,11 @@
-import {  useReducer } from 'react';
+import { useReducer } from 'react';
 
-import { Button, Container, TextField, Typography, Box} from '@material-ui/core';
-import { ArrowBackIosRounded, ArrowForwardIosRounded } from '@material-ui/icons';
+import { Container, TextField, Typography, Box } from '@material-ui/core';
 import { useStyles } from "./ChangeNumberPhone.style";
+import arrowRigth from "../../assets/icons/arrowRigth.svg";
+import arrowLeft from "../../assets/icons/arrowLeft.svg";
+
+import "./style.scss";
 import { AppBar } from '../../components/AppBar';
 import { Modal } from '../../components/Modal';
 
@@ -25,12 +28,13 @@ export const ChangeNumberPhone: React.FC = () => {
 
       <Box className={style.test}>
 
-    
+
         <TextField
           className={style.input}
           color="primary"
           placeholder="Digite apenas o número"
           label="Número de telefone"
+
           variant="outlined"
           InputLabelProps={{
             shrink: true,
@@ -39,25 +43,19 @@ export const ChangeNumberPhone: React.FC = () => {
           fullWidth
         />
 
-        <Box className={style.footer}>
-          <Button
-            className={style.button}
-            variant="contained"
-            size="large"
-            color="secondary"
-            fullWidth
-            startIcon={<ArrowBackIosRounded style={{ color: "#5F82A6" }} />}
-          >Voltar</Button>
-          <Button
-            className={style.button}
-            color="primary"
-            variant="contained"
-            size="large"
-            endIcon={<ArrowForwardIosRounded style={{ color: "#5F82A6" }} />}
-            fullWidth
-            onClick={() => { setIsShowModal() }}
-          >Próximo</Button>
-        </Box>
+        <div className="footer">
+          <button
+            className={"cancelButton"}
+          > 
+            <img src={arrowLeft} alt="Voltar" />
+            Voltar
+          </button>
+          <button
+            className={"nextButton"}
+            onClick={setIsShowModal}>Próximo
+            <img src={arrowRigth} alt="Próximo" />
+          </button>
+        </div>
         <Modal showModal={isShowModal} onHideModal={setIsShowModal} />
       </Box>
 

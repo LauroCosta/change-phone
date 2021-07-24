@@ -24,25 +24,25 @@ export const useStyles = makeStyles({
 
   info: {
     background: "#f9f9f9",
-    height: "20%",
-    padding: "1rem",
+    height: "8.313rem",
+    padding: "1.313rem 1rem",
   },
 
   description: {
-    fontSize: "1.5rem",
+    fontSize: "1.25rem",
     color: colors.primary.main,
     fontWeight: 700,
     fontFamily: "Roboto, sans-serif",
-    
+    lineHeight: "1.25rem",
   },
 
   infoPhone: {  
-    fontSize: "1.25rem",
+    fontSize: "0.875rem",
     color: colors.primary.main,
+    lineHeight: "1rem",
     fontWeight: 500,
     fontFamily: "Roboto, sans-serif",
-    lineHeight: "1.5rem",
-    margin: "2rem 0",
+    margin: "1.75rem 0",
   },
 
   footer: {
@@ -53,11 +53,15 @@ export const useStyles = makeStyles({
   },
 
   test: {
-    padding: "1rem",
+    position: "absolute",
+    bottom: "0",
+    left: "0",
+    right: "0",
+    padding: "1rem 1rem 1.5rem 1rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: "70%",
+    height: "23.83rem",    
   },
 
 

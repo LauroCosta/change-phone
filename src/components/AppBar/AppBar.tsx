@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar as MuiAppBar, Box, Toolbar, Button} from "@material-ui/core";
-import {CloseRounded} from "@material-ui/icons";
-
+import close from "../../assets/icons/close.svg";
+import "./style.scss";
 
 import { useHistory } from "react-router-dom";
 import companyLogo from "../../assets/logo.svg";
@@ -30,11 +30,10 @@ export const AppBar: React.FC<AppBarProps> = ({
         </Box>
         {action}
 
-        <Button 
-          style={{textTransform: "capitalize"}}
-          variant="contained" 
-          startIcon={<CloseRounded />}
-        >Cancelar</Button>
+        <button className="closeButton">
+          <img src={close} alt="fechar" />
+          Cancelar
+        </button>
       </Toolbar>
     </MuiAppBar>
   );

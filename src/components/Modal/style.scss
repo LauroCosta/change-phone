@@ -1,6 +1,6 @@
 .modal {
   position: relative;
-  height: 18rem;
+  height: 13.25rem;
   width: 100%;
   left: 0;
 
@@ -23,23 +23,26 @@
 }
 
 .modal-button {
-  width: 7rem;
-  height: 2.5rem;
+ 
   position: absolute;
-  top: -1.25rem;
+  top: -0.90rem;
   right: 20px;
-  padding: 4px 12px;
-  border: 0.5px solid #e8e8e8;
-  box-sizing: border-box;
+  
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.34);
-  border-radius: 5px;
-  background: #fff;
-  color: #323751;
+
+  background: #FFF;
+  width: 5rem;
+  height: 1.6rem;
+  border: 0.5px solid #E8E8E8;
+  font-size: 0.625rem;
+  color: #555555;
+  border-radius: 0.25rem;
 
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.50rem;
+;
 
   transition: filter 0.2s;
 
@@ -48,7 +51,7 @@
   }
 
   img {
-    width: 1rem;
+    width: 0.875rem;
   }
 }
 
@@ -60,20 +63,22 @@
   .infoModal {
     color: #efefef;
     font-family: Roboto;
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
 
     h1 {
       font-style: normal;
       font-weight: bold;
-      font-size: 1.25rem;
+      font-size: 1rem;
       line-height: 100%;
-      margin-bottom: 2rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
+
     }
 
     strong {
       font-weight: 300;
-      font-size: 1rem;
-      line-height: 1rem;
+      font-size: 0.75rem;
+      
     }
   }
 
@@ -82,30 +87,21 @@
     justify-content: center;
 
     width: 100%;
-    padding: 2rem;
+    padding: 1rem 1.563rem;
 
     .inputs {
-      padding: 0 1rem;
+      padding: 0 0.938rem;
     }
     input {
-      position: relative;
-      min-width: 3.75rem;
-      min-height: 4rem;
+
+      min-width: 2.813rem;
+      min-height: 3.438rem;
       background: #656982;
       border-radius: 3px;
       color: #efefef;
       border: 0;
 
-      &::before {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        font-size: 20px;
-        color: aquamarine;
-        top: 0;
-        left: 0;
-        content: "h";
-      }
+
     }
   }
 
@@ -117,20 +113,25 @@
 
     .confirmButton {
       position: relative;
-      width: 7.75rem;
-      height: 2.25rem;
-      border-radius: 4px;
-
+      width: 5.938rem;
+      height: 1.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.563rem;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
       background: #ffffff;
       border: 0.5px solid #e8e8e8;
-
+      color: #323751;
       transition: filter 0.2s;
+      
 
       img {
         position: absolute;
-        width: 1.75rem;
-        bottom: 0.20rem;
-        left: -0.87rem;
+        width: 1.125rem;
+        margin: 0.15rem 0;
+        bottom: 0rem;
+        left: -0.563rem;
       }
 
       &:hover {
