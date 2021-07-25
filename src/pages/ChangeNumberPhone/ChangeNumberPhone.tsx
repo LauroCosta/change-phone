@@ -8,8 +8,6 @@ import { Modal } from '../../components/InputPasswordModal';
 import { ConfirmPasswordModal } from '../../components/ConfirmPasswordModal';
 import "./style.scss";
 import { useAlert } from '../../hooks/useAlert';
-import { useMask } from '../../hooks/useMask';
-import { maskPhone } from '../../utils/mask/maskPhone';
 
 export const ChangeNumberPhone: React.FC = () => {
   const style = useStyles();
