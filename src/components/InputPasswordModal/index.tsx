@@ -36,7 +36,7 @@ export function Modal({ showModal }: IModalProps) {
 
     if(password.length == 4){
       openAlert();
-      setTimeout(() => { toggleModalPassword(); }, 300);
+      // setTimeout(() => { toggleModalPassword(); }, 300);
       setNumberPhoneDisplay(phoneInput);
       setPhoneInput("");
       setPassword("");

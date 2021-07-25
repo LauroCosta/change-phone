@@ -7,6 +7,10 @@
   color: #555555;
   border-radius: 0.25rem;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,5 +23,12 @@
   &:hover {
     filter: brightness(0.9);
   }
+
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }

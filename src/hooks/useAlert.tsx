@@ -30,7 +30,7 @@ export function AlertContextProvider({ children }: AlertContextProviderProps) {
   const [isOpenModalPassword, setIsOpenModalPassword] = useState(false);
   const [password, setPassword] = useState("");
   const [phoneInput, setPhoneInput ] = useMask(maskPhone);
-  const [numberPhoneDisplay, setNumberPhoneDisplay] = React.useState('(88) 99999.9999');
+  const [numberPhoneDisplay, setNumberPhoneDisplay] = React.useState('(85) 00000.0000');
 
   function openAlert() {
 
@@ -49,8 +49,8 @@ export function AlertContextProvider({ children }: AlertContextProviderProps) {
   function resetModalPassword(){
     setPassword("");
     setIsOpenModalPassword(false);
-    setIsOpen(false);
     setPhoneInput("");
+    closeAlert();
   }
 
 

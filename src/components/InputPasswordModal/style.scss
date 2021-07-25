@@ -38,6 +38,10 @@
   color: #555555;
   border-radius: 0.25rem;
 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,8 +81,10 @@
 
     strong {
       font-weight: 300;
-      font-size: 0.75rem;
-      
+      font-size: 0.720rem;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;      
     }
   }
 

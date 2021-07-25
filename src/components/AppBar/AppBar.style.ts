@@ -1,18 +1,22 @@
 import {makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles({
-  toolbar: {
+  
+  appbar: {
+    height: "3rem",
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
+    justifyContent: "center",
+    alignItems: "space-between",
+    padding: "1rem",
     boxShadow: "none",
- 
+    
   },
+  
   cancelButton: {
     marginLeft: "16px",
   },
   logo: {
-    height: "100%",
+
     width: "80px",
     borderRadius: "0px",
     cursor: "pointer",
