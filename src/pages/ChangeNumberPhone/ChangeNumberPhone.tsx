@@ -51,7 +51,7 @@ export const ChangeNumberPhone: React.FC = () => {
       <div className="inputNumberPhone">
         <label>Número de telefone</label>
         <input
-          placeholder="Digite apenas o número"
+          placeholder="Digite apenas números"
           value={phoneInput}
           onChange={onPhoneChange}
           disabled={isOpenModalPassword}
