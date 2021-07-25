@@ -3,7 +3,7 @@ import {Router} from "../Router";
 import { ThemeProvider } from '@material-ui/core';
 import { theme } from "../../config/theme";
 import "../../style/global.scss";
-import { AlertContextProvider } from '../../context/AlertContextProvider';
+import { AlertContextProvider } from '../../hooks/useAlert';
 
 export const App: React.FC = () => {
   return (

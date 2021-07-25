@@ -2,7 +2,8 @@ import React from "react";
 import OtpInput from "react-otp-input";
 import closeIcon from "../../assets/icons/close.svg";
 import confirmIcon from "../../assets/icons/confirm.svg";
-import { useAlert } from "../../context/AlertContextProvider";
+import { useAlert } from "../../hooks/useAlert";
+import { useMask } from "../../hooks/useMask";
 
 import "./style.scss";
 
@@ -17,7 +18,10 @@ export function Modal({ showModal }: IModalProps) {
     toggleModalPassword,    
     password,
     setPassword, 
-    resetModalPassword
+    resetModalPassword,
+    setNumberPhoneDisplay,
+    phoneInput,
+    setPhoneInput,
   } = useAlert();
 
   const handlePassword = (e: string) => {
@@ -27,11 +31,14 @@ export function Modal({ showModal }: IModalProps) {
     setPassword(e)
   }
 
+
   function confirmPassword(){
 
     if(password.length == 4){
       openAlert();
       setTimeout(() => { toggleModalPassword(); }, 300);
+      setNumberPhoneDisplay(phoneInput);
+      setPhoneInput("");
       setPassword("");
     }
   }

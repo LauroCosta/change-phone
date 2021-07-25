@@ -1,4 +1,6 @@
-import { createContext, ReactNode, useContext, useState } from "react";
+import React, { createContext, ReactNode, useContext, useState } from "react";
+import { maskPhone } from "../utils/mask/maskPhone";
+import { useMask } from "./useMask";
 
 type AlertContextData = {
   openAlert: () => void;  
@@ -7,9 +9,13 @@ type AlertContextData = {
   isOpen: boolean;
   isOpenModalPassword: boolean;
   password: string;
+  phoneInput: string;
+  numberPhoneDisplay: string;
   setIsOpenModalPassword: (state: boolean) => void; 
   resetModalPassword: () => void;
   setPassword: (password: string) => void;
+  setPhoneInput: (phoneInput: string) => void;
+  setNumberPhoneDisplay: (numberPhoneDisplay: string) => void;
 }
 
 export const AlertContext = createContext({} as AlertContextData);
@@ -23,6 +29,8 @@ export function AlertContextProvider({ children }: AlertContextProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenModalPassword, setIsOpenModalPassword] = useState(false);
   const [password, setPassword] = useState("");
+  const [phoneInput, setPhoneInput ] = useMask(maskPhone);
+  const [numberPhoneDisplay, setNumberPhoneDisplay] = React.useState('(88) 99999.9999');
 
   function openAlert() {
 
@@ -57,6 +65,10 @@ export function AlertContextProvider({ children }: AlertContextProviderProps) {
         toggleModalPassword,
         setIsOpenModalPassword,
         resetModalPassword,
+        phoneInput,
+        setPhoneInput,
+        numberPhoneDisplay,
+        setNumberPhoneDisplay
       }}>
       {children}
     </AlertContext.Provider>

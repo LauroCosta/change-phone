@@ -5,7 +5,7 @@ import "./style.scss";
 
 import companyLogo from "../../assets/logo.svg";
 import { useStyles } from "./AppBar.style";
-import { useAlert } from "../../context/AlertContextProvider";
+import { useAlert } from "../../hooks/useAlert";
 
 interface AppBarProps {
   action?: React.ReactNode;

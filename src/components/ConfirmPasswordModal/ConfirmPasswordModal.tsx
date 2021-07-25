@@ -1,6 +1,6 @@
 import "./style.scss";
 import confirmPassword from "../../assets/icons/confirmPassword.svg";
-import { useAlert } from "../../context/AlertContextProvider";
+import { useAlert } from "../../hooks/useAlert";
 
 interface IConfirmPasswordModalProps {
   showModal: boolean;
