@@ -50,6 +50,7 @@ export function AlertContextProvider({ children }: AlertContextProviderProps) {
     setPassword("");
     setIsOpenModalPassword(false);
     setIsOpen(false);
+    setPhoneInput("");
   }
 
 
