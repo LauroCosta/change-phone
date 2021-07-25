@@ -1,5 +1,4 @@
 import {makeStyles } from "@material-ui/core";
-import {textColors } from "../../config/theme";
 
 export const useStyles = makeStyles({
   toolbar: {
@@ -7,6 +6,7 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     boxShadow: "none",
+ 
   },
   cancelButton: {
     marginLeft: "16px",

@@ -18,10 +18,6 @@ export const useStyles = makeStyles({
   },
 
 
-  input: {
-    marginTop: "4rem",
-  },
-
   info: {
     background: "#f9f9f9",
     height: "8.313rem",
@@ -63,17 +59,4 @@ export const useStyles = makeStyles({
     justifyContent: "space-between",
     height: "23.83rem",    
   },
-
-
-  button: {
-
-    borderRadius: "10px",
-    textTransform: "capitalize",
-
-    
-  },
-
-  iconButton: {
-
-  }
 });

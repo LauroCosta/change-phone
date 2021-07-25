@@ -1,5 +1,10 @@
 .footer {
 
+  padding: 1.5rem 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,4 +53,39 @@
     height: 0.875rem;
 
   }
+}
+
+.inputNumberPhone{
+
+  padding: 3.313rem 1.125rem;
+  label {
+    margin-left: 0.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    color: #555555;
+  }
+  
+  input{
+    position: relative;
+    height: 2.5rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 0.313rem;
+    border: 0.8px solid #C4C4C4;
+    border-radius: 5px;
+
+    &::placeholder {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #C4C4C4;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+    }
+  
+  }
+
+
+  
 }

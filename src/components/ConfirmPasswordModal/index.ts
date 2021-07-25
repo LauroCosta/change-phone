@@ -1,0 +1,1 @@
+export { ConfirmPasswordModal } from './ConfirmPasswordModal'

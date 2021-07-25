@@ -17,7 +17,7 @@
   bottom: 0;
 }
 
-.modal-close {
+.close {
   position: absolute;
   bottom: -312px;
 }
@@ -98,10 +98,16 @@
       min-height: 3.438rem;
       background: #656982;
       border-radius: 3px;
+      padding-top: 0.5rem;
+    
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 1.875rem;
+      line-height: 0;
       color: #efefef;
       border: 0;
-
-
+     
     }
   }
 
