@@ -34,7 +34,8 @@
   width: 5rem;
   height: 1.6rem;
   border: 0.5px solid #E8E8E8;
-  font-size: 0.625rem;
+  font-size: 10px;
+  line-height: 12px;
   color: #555555;
   border-radius: 0.25rem;
 
@@ -128,10 +129,13 @@
       width: 5.938rem;
       height: 1.5rem;
       border-radius: 0.25rem;
-      font-size: 0.563rem;
-      font-family: Roboto;
+
       font-style: normal;
-      font-weight: 500;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 100%;
+
+
       background: #ffffff;
       border: 0.5px solid #e8e8e8;
       color: #323751;
