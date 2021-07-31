@@ -1,4 +1,4 @@
-import { Container, TextField, Typography, Box } from '@material-ui/core';
+import { Container, Typography, Box } from '@material-ui/core';
 import { useStyles } from "./ChangeNumberPhone.style";
 import React from 'react';
 import arrowRigth from "../../assets/icons/arrowRigth.svg";
@@ -26,10 +26,8 @@ export const ChangeNumberPhone: React.FC = () => {
   function handleNextButton() {
 
     if(phoneInput.length == 15) {
-      toggleModalPassword();
-
+      toggleModalPassword(); 
     }
-
   }
 
   const onPhoneChange = (event: React.ChangeEvent<HTMLInputElement>) =>
@@ -65,12 +63,13 @@ export const ChangeNumberPhone: React.FC = () => {
           onClick={resetModalPassword}
         >
           <img src={arrowLeft} alt="Voltar" />
-          Voltar
+          <span>Voltar</span>
         </button>
         <button
           type="button"
           className={"nextButton"}
-          onClick={handleNextButton}>Próximo
+          onClick={handleNextButton}>
+          <span>Próximo</span> 
           <img src={arrowRigth} alt="Próximo" />
         </button>
       </div>

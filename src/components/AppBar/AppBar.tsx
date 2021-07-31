@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar as MuiAppBar, Box, Toolbar } from "@material-ui/core";
+import { AppBar as MuiAppBar, Box} from "@material-ui/core";
 import close from "../../assets/icons/close.svg";
 import "./style.scss";
 
@@ -30,7 +30,7 @@ export const AppBar: React.FC<AppBarProps> = ({
           onClick={resetModalPassword}
         >
           <img src={close} alt="fechar" />
-          Cancelar
+          <span>Cancelar</span>
         </button>
       </div>
 

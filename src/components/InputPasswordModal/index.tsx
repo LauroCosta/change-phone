@@ -1,9 +1,7 @@
-import React from "react";
 import OtpInput from "react-otp-input";
 import closeIcon from "../../assets/icons/close.svg";
 import confirmIcon from "../../assets/icons/confirm.svg";
 import { useAlert } from "../../hooks/useAlert";
-import { useMask } from "../../hooks/useMask";
 
 import "./style.scss";
 
@@ -14,8 +12,7 @@ interface IModalProps {
 export function Modal({ showModal }: IModalProps) {
 
   const {
-    openAlert, 
-    toggleModalPassword,    
+    openAlert,    
     password,
     setPassword, 
     resetModalPassword,
@@ -48,7 +45,7 @@ export function Modal({ showModal }: IModalProps) {
     <section className={`${showModal ? 'modal-open' : 'close'} modal`}>
       <button className="modal-button" onClick={resetModalPassword}>
         <img src={closeIcon} alt="Fechar" />
-        Fechar
+        <span>Fechar</span>
       </button>
 
       <div className="content">
